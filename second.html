@@ -1,0 +1,49 @@
+<div id="d1">Getting element</div>
+<div id="d2">New Content</div>
+<br>
+<input id="in1">
+<button onclick="divi();">Click</button>
+
+<script>
+    function divi()
+    {
+    y=document.getElementById("d1");
+    z=document.getElementById("d2");
+    i=document.getElementById("in1");
+    y.innerHTML=z.innerHTML;
+    z.innerHTML=i.value;
+    i.value="";
+    
+    }
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=2MLqlbrT"></script>
+<script>
+    function tpe()
+    {
+        var i=document.getElementById("in2");
+        var j=document.getElementById("d3");
+        j.innerHTML=i.value;
+    }
+    function spk()
+    {
+        
+        responsiveVoice.speak("this is a new page","UK English Female");
+    }
+
+</script>
+<br><br>
+<h3>Type instantly</h3>
+<input id="in2" onkeyup="tpe();" />
+<div id="d3" onclick="spk();" > Write Text Here </div>
+<br><br>
+<div>New Division</div>
+<div>More Division</div>
+<script>
+    function tgs()
+    {
+        b=document.getElementsByTagName("div");
+        alert(b.length);
+    }
+
+</script>
+<button onclick="tgs();">Get Number of Divisons</button>
